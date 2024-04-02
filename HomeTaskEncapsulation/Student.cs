@@ -46,6 +46,7 @@ namespace HomeTaskEncapsulation
                 Console.WriteLine("Bele istifadeci movcud deyil");
             }
             count = 0;
+            int counter = 0;
             foreach (var item in stuArr)
             {
             if (check)
@@ -56,7 +57,7 @@ namespace HomeTaskEncapsulation
                     {
                         Console.WriteLine(item.Name + " " +item.SurName);
                        Console.WriteLine(item.Grade);
-                            count++;
+                            counter++;
                     }
                     else
                     {
@@ -66,7 +67,7 @@ namespace HomeTaskEncapsulation
             }
 
             }
-            if (count == 0)
+            if (counter == 0)
             {
                 Console.WriteLine("Istifadeci Telebe deyil");
             }
